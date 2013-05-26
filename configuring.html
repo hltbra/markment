@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Markment by gabrielfalcao</title>
+    <meta name="description" content="A markdown-based automatic documentation generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Loading Bootstrap -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/markment.css" rel="stylesheet">
+
+    <link href="./assets/css/github.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1277640-19', 'falcao.it');
+  ga('send', 'pageview');
+
+</script>
+
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="logo">
+            <img src="./images/logo.png" style="display: block" alt="Markment" />
+            <h1>Markment
+              <em>v0.2.13</em>
+            </h1>
+            <small>A markdown-based automatic documentation generator</small></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <ul class="nav nav-list menu">
+            <li class="bold"><h3><a href="#init">Sections</a></h3></li>
+              
+                <li>
+      <a class="btn-large"
+         href="#configuring-your-project">
+       Configuring your project
+      </a>
+    </li>
+
+  
+              
+            <li class="bold"><h3><a href="#init">Table of contents</a></h3></li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./API.html#the--code-markment--code--class">
+                        The <code>Markment</code> class
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./configuring.html#configuring-your-project">
+                        Configuring your project
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./events.html#events">
+                        Events
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./features.html#features">
+                        Features
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./index.html#supercharge-your-project--39-s-documentation">
+                        Supercharge your project&#39;s documentation
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./theme-list.html#available-themes">
+                        Available Themes
+                </a>
+              </h4>
+            </li>
+              
+            <li class="bold">
+              <h4>
+                <a href="./themes.html#developing-markment-themes">
+                        Developing markment themes
+                </a>
+              </h4>
+            </li>
+              
+          </ul>
+
+        </div><!-- .span4 -->
+        <div class="span8">
+          <a href="#init" id="init" name="init"></a>
+          <div class="documentation"><h1 id="configuring-your-project" name="configuring-your-project"><a href="#configuring-your-project">Configuring your project</a></h1>
+<p>Markment <strong>might</strong> use some extra metadata to render your documentation.</p>
+
+<p>It&#39;s done by reading a file called <code>.markment.yml</code> in the root folder of your documentation.</p>
+
+<p>Below there is a full-featured example of a <code>.markment.yml</code> file.</p>
+<div class="highlight"><pre name="configuring-your-project-example-1"><span class="l-Scalar-Plain">project</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">This title will probably be used in each &lt;title&gt; tag of the templates</span>
+  <span class="l-Scalar-Plain">version</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.2.3</span>
+  <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">This is a short</span>
+  <span class="l-Scalar-Plain">github_url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://github.com/yourname/yourproject</span>
+  <span class="l-Scalar-Plain">tarball_download_url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://yoururl.com/file.tgz</span>  <span class="c1"># if not given defaults to "{github_url}/archive/master.tar.gz"</span>
+  <span class="l-Scalar-Plain">zipball_download_url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://yoururl.com/file.zip</span>  <span class="c1"># if not given defaults to "{github_url}/archive/master.zip</span>
+
+<span class="l-Scalar-Plain">documentation</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">index</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">TODO.md</span>  <span class="c1"># the file that should be considered the main one. Defaults to README.md</span>
+</pre></div></div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <h3 class="footer-title">Markment</h3>
+            <p>Markment is maintained by <a href="http://github.com/gabrielfalcao">gabrielfalcao</a>. <br />
+              This documentation was generated automatically by <a href="http://octomarks.io/gabrielfalcao/markment">Markment</a>.
+            </p>
+          </div> <!-- /span8 -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
